@@ -1,0 +1,239 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0d1117;
+    color: #c9d1d9;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #161b22;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.nav-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-size: 20px;
+    font-weight: bold;
+    color: #c9d1d9;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #c9d1d9;
+    padding: 8px 15px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #a5caec;
+    border-radius: 5px;
+    color: rgb(34, 34, 34);
+}
+
+.logout {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #dc3545;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+    margin-right: 35px;
+}
+
+.logout:hover {
+    background-color: #b02a37;
+}
+
+/* Página Inicial */
+.content-container {
+    margin-top: 80px;
+    padding: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #161b22;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 900px) {
+    .content-container {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .navbar {
+        background-color: #161b22;
+        padding: 15px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    .nav-links a {
+        padding: 0px;
+        text-decoration: none;
+        color: #c9d1d9;
+        transition: 0.3s;
+    }
+    .logout {
+        margin-left: 10px;
+    }
+    .content-container {
+        margin-top: 80px;
+    }
+    
+    .nav-links a:hover {
+        background-color: #a5caec;
+       
+        color: rgb(34, 34, 34);
+    }
+}
+
+.content-container h1, h3 {
+    text-align: center;
+    color: #c9d1d9;
+}
+
+.content-container p {
+    text-align: justify;
+    color: #c9d1d9;
+}
+
+/* Login */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Adiciona espaçamento entre os contêineres */
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    padding-top: 100px; /* Para não ficar muito colado no topo */
+}
+
+.login-container, .container-dicas {
+    background-color: #161b22;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+    color: #c9d1d9;
+    text-align: center;
+}
+
+.login-form label {
+    margin-bottom: 5px;
+    color: #c9d1d9;
+}
+
+.login-form input {
+    width: 100%;
+    height: 33px;
+    margin-bottom: 15px;
+    border: 1px solid #30363d;
+    border-radius: 4px;
+    background-color: #0d1117;
+    color: #c9d1d9;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #238636;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: #2ea043;
+}
+
+img {
+    width: 50%;
+    height: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (max-width: 900px) {
+    img{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .login-container, .container-dicas {
+        background-color: #161b22;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+@media (max-width: 450px) {
+    .login-container, .container-dicas {
+        background-color: #161b22;
+        width: 95%;
+    }
+}
+@media (max-width: 449px) {
+    .login-container, .container-dicas {
+        background-color: #161b22;
+        width: 90%;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}
+
+.coracoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
