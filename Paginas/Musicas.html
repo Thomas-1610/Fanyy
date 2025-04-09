@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body onload="checkLogin()">
+    <nav class="navbar">
+        <div class="nav-container">
+            <a class="navbar-brand">Dear Fany</a>
+            <div class="nav-links">
+                <a href="dashboard.html">Início</a>
+                <a href="./Paginas/Cartas.html">Cartas</a>
+                <a href="./Paginas/Fotos.html">Fotos</a>
+            </div>
+          
+            <a href="index.html" class="logout" onclick="logout()">Sair</a>
+       
+        </div>
+    </nav>
+    
+    <div class="content-container">
+        <div id="player-container">
+            <img id="music-image" src="../img/11.jpeg" alt="Imagem da música">
+            <div id="letra-container"></div>
+            <audio id="player" src="../Musicas/ninguem.mp3"></audio>
+            <div id="controls">
+                <button id="playBtn" class="paused"></button>
+            </div>
+            <div id="progress-container">
+                <div id="progress-bar"></div>
+            </div>
+            <div id="progress-time">
+                <span id="current-time">0:00</span>
+                <span id="duration">0:00</span>
+            </div>
+        </div>
+    </div>
+    
+    <script src="../js/player.js" defer></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
