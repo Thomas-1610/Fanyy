@@ -61,7 +61,13 @@ function updateLyrics() {
         })
         .join("");
 
-    // Adiciona evento de clique para cada frase
+    // Scroll the active lyric into view
+    const activeLyric = letraContainer.querySelector('.active');
+    if (activeLyric) {
+        activeLyric.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+
+    // Add click event to each phrase
     const phrases = letraContainer.querySelectorAll('p');
     phrases.forEach(phrase => {
         phrase.addEventListener('click', (e) => {
