@@ -356,7 +356,7 @@ img {
 }
 
 
-.carta-container{
+.carta-container, .carta-container-topo {
     margin-top: 20px;
     padding: 20px;
     max-width: 800px;
@@ -365,10 +365,38 @@ img {
     background-color: #161b22;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
+.carta-container h1, .carta-container-topo h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+    text-align: center; /* Aligns the h1 horizontally */
+}
+@media (max-width: 900px) {
+    .content-container, .carta-container {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .carta-container-topo{
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 90px;
+    }
 }
 
 
+.Pcartas{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #c9d1d9;
+}
 
 
 
