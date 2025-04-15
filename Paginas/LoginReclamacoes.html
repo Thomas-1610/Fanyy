@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="login-container">
+            <form class="login-form" id="login-form">
+                <h2>Login</h2>
+                <button type="button" id="send-code-btn">Enviar Código para o Email</button>
+                <label for="code">Código:</label>
+                <input type="text" id="code" name="code" required>
+                <button type="submit" id="validate-code-btn">Validar Código</button>
+            </form>
+        </div>
+        <div class="container-dicas">
+            <h2>Dicas:</h2>
+            <p>O código será enviado para o email configurado no sistema.</p>
+        </div>
+    </div>
+    <script src="../js/Reclamacoes.js"></script>
+</body>
+
+</html>

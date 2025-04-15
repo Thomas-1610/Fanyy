@@ -25,6 +25,12 @@ body {
     width: 100%;
     justify-content: space-between;
     align-items: center;
+
+    & .btn-reclamacoes{
+        background-color: #238636;
+        width: 7vh;
+        height: 7vh;
+    }
 }
 
 .navbar-brand {
