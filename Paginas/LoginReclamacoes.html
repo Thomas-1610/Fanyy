@@ -23,9 +23,16 @@
             <p>Para acessar essa página, entre em call comigo e pergunte o código.<br><br></p>
         </div>
 
-        <a class="voltar-reclamacoes" href="../dashboard.html">Voltar</a>
+        <a class="voltar-reclamacoes" id="back-btn">Voltar</a>
     </div>
     
+    <script src="../js/FileEncryption.js"></script>
+    <script>
+        document.getElementById('back-btn').addEventListener('click', () => {
+            const encryptedDashboard = "ZGFzaGJvYXJkLmh0bWw="; // Nome criptografado de dashboard.html
+            window.location.href = decryptFileName(encryptedDashboard);
+        });
+    </script>
     <script src="../js/Reclamacoes.js"></script>
 </body>
 </html>
