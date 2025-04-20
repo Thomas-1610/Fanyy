@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="../img/Logo.png" type="image/x-icon">
+</head>
+<body onload="checkLogin()">
+    <nav class="navbar">
+        <div class="nav-container">
+            <a class="navbar-brand">Dear Fany</a>
+            <div class="nav-links">
+                <a href="../dashboard.html">Início</a>
+                <a href="../Paginas/Cartas.html">Cartas</a>
+                <a href="../Paginas/Fotos.html">Fotos</a>
+                <a href="../Paginas/Musicas.html">Músicas</a>
+            </div>
+          
+            <a href="../index.html" class="logout" onclick="logout()">Sair</a>
+       
+        </div>
+    </nav>
+    
+    <div class="content-container">
+        <div id="player-container1">
+            <img id="music-image" src="../img/ninguem.jpg" alt="Imagem da música">
+            <div id="letra-container" class="lyrics-box"></div>
+            <audio id="player" src="../Musicas/ninguem.mp3"></audio>
+            <div id="controls">
+                <button id="playBtn" class="paused"></button>
+            </div>
+            <div id="progress-container">
+                <div id="progress-bar"></div>
+            </div>
+            <div id="progress-time">
+                <span id="current-time">0:00</span> <!-- Updated to match JavaScript -->
+                <span id="duration">0:00</span> <!-- Updated to match JavaScript -->
+            </div>
+        </div>
+        
+        <div id="player-container2">
+            <img id="music-image" src="../img/be more.jpeg" alt="Imagem da música">
+            <div id="letra-container" class="lyrics-box"></div>
+            <audio id="player" src="../Musicas/Be More.mp3"></audio>
+            <div id="controls">
+                <button id="playBtn" class="paused"></button>
+            </div>
+            <div id="progress-container">
+                <div id="progress-bar"></div>
+            </div>
+            <div id="progress-time">
+                <span id="current-time">0:00</span> <!-- Updated to match JavaScript -->
+                <span id="duration">0:00</span> <!-- Updated to match JavaScript -->
+            </div>
+        </div>
+    </div>
+    
+    <script src="../js/player.js" defer></script>
+    <script src="../js/blockInspect.js"></script>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

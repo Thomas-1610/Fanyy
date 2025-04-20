@@ -492,3 +492,18 @@ button img{
     cursor: pointer;
     color: #f7f7f7;
 }
+
+#player-container1{
+    width: 50vh;
+    border: 3px solid #e9e9e9;
+    margin: 2vh;
+    padding: 6vh;
+    border-radius: 1.6vh;
+}
+#player-container2{
+    width: 50vh;
+    border: 3px solid #e74a4a;
+    margin: 2vh;
+    padding: 6vh;
+    border-radius: 1.6vh;
+}
