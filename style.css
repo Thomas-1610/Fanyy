@@ -473,3 +473,22 @@ img {
     color: #ff8585;
     margin-bottom: 20px;
 }
+.campo-senha{
+    position: relative; 
+    display: inline-block;
+
+
+   
+}
+
+button img{
+    width: 3.6vh;
+    height: auto;
+    position: absolute; 
+    right: 8px; 
+    top: 26%; 
+    transform: translateY(-50%); 
+    background: none; border: none; 
+    cursor: pointer;
+    color: #f7f7f7;
+}
