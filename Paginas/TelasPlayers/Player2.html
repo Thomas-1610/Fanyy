@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <link rel="icon" href="/img/Logo.png" type="image/x-icon">
+</head>
+<body onload="checkLogin()">
+    <div class="container-player">
+        <div id="player-container1">
+            <div class="groupItens">
+                <img id="music-image" src="/img/be more.jpeg" alt="Imagem da música">
+                <div id="letra-container" class="lyrics-box"></div>
+                <audio id="player" src="/Musicas/Be More.mp3" data-song-id="letras2"></audio>
+
+                <div id="progress-container">
+                    <div id="progress-bar"></div>
+                </div>
+                <div id="controls">
+                    <button id="playBtn" class="paused"></button>
+                </div>
+                <div id="progress-time">
+                    <span id="current-time">0:00</span> <!-- Updated to match JavaScript -->
+                    <span id="duration">0:00</span> <!-- Updated to match JavaScript -->
+                </div>
+            </div>
+        </div>
+    
+    <script src="/js/player.js" defer></script>
+    <script src="../js/blockInspect.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

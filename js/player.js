@@ -45,7 +45,7 @@ const letras = [
     { time: 189, text: "Às vezes o tempo", duration: 7 } // 2:45 to 2:50
 ];
 const letras2 = [
-    { time: 27, text: "E eu vou dançar onde ninguém possa me olhar", duration: 6 }, // 0:27 to 0:33
+    { time: 27, text: "oo", duration: 6 }, // 0:27 to 0:33
     { time: 33, text: "Resido em mim, sou meu lar", duration: 5 }, // 0:33 to 0:38
     { time: 38, text: "E ninguém pode cantar minha canção", duration: 7 }, // 0:38 to 0:43
     { time: 45, text: "Um abrigo, um amigo", duration: 5 }, // 0:43 to 0:48
@@ -101,8 +101,16 @@ function updateProgressBar() {
     }
 }
 
+// Function to determine which lyrics to use based on the song
+function getLyrics() {
+    const songId = player.getAttribute('data-song-id'); // Get the song ID from the audio element
+    return songId === 'letras2' ? letras2 : letras; // Default to 'letras' if no match
+}
+
+// Update the lyrics dynamically
 function updateLyrics() {
-    letraContainer.innerHTML = letras
+    const currentLyrics = getLyrics(); // Get the appropriate lyrics
+    letraContainer.innerHTML = currentLyrics
         .map((letra, index) => {
             const isActive = index === currentIndex ? "active" : "";
             return `<p class="${isActive}" data-time="${letra.time}">${letra.text}</p>`;
@@ -121,7 +129,7 @@ function updateLyrics() {
         phrase.addEventListener('click', (e) => {
             const time = parseFloat(e.target.getAttribute('data-time'));
             player.currentTime = time;
-            currentIndex = letras.findIndex(letra => letra.time === time);
+            currentIndex = currentLyrics.findIndex(letra => letra.time === time);
             updateLyrics();
         });
     });
@@ -131,8 +139,8 @@ function startLyricsScroll() {
     updateLyrics(); // Atualiza as letras imediatamente
     intervalId = setInterval(() => {
         if (
-            currentIndex < letras.length &&
-            player.currentTime >= letras[currentIndex].time + letras[currentIndex].duration
+            currentIndex < getLyrics().length &&
+            player.currentTime >= getLyrics()[currentIndex].time + getLyrics()[currentIndex].duration
         ) {
             currentIndex++;
             updateLyrics();
@@ -166,6 +174,6 @@ progressContainer.addEventListener('click', (e) => {
     const duration = player.duration;
 
     player.currentTime = (clickX / width) * duration;
-    currentIndex = letras.findIndex(letra => player.currentTime < letra.time) - 1;
+    currentIndex = getLyrics().findIndex(letra => player.currentTime < letra.time) - 1;
     updateLyrics();
 });

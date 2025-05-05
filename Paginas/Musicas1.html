@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="../img/Logo.png" type="image/x-icon">
+</head>
+<body onload="checkLogin()">
+    <nav class="navbar">
+        <div class="nav-container">
+            <a class="navbar-brand">Dear Fany</a>
+            <div class="nav-links">
+                <a href="../dashboard.html">Início</a>
+                <a href="../Paginas/Cartas.html">Cartas</a>
+                <a href="../Paginas/Fotos.html">Fotos</a>
+                <a href="../Paginas/Musicas.html">Músicas</a>
+            </div>
+            <a href="../index.html" class="logout" onclick="logout()">Sair</a>
+        </div>
+    </nav>
+    
+    
+    <div class="container-lista-musica">
+        <div onclick="window.location.href='./TelasPlayers/Player1.html';" class="itemLista">
+            <img class="imgListaMusica" src="../img/ninguem.jpg" alt="imagem musica">
+            <div class="textoMusica">
+                <h3 class="tituloMusica">Ninguém</h3>
+                <p class="cantor">Nome do Cantor</p>
+            </div>
+        </div>
+        <div onclick="window.location.href='./TelasPlayers/Player2.html';" class="itemLista">
+            <img class="imgListaMusica" src="../img/be more.jpeg" alt="imagem musica">
+            <div class="textoMusica">
+                <h3 class="tituloMusica">Be more</h3>
+                <p class="cantor">Stephen Sanchez</p>
+            </div>
+        </div>
+        <div onclick="window.location.href='./TelasPlayers/Player3.html';" class="itemLista">
+            <img class="imgListaMusica" src="../img/bird.jpeg" alt="imagem musica">
+            <div class="textoMusica">
+                <h3 class="tituloMusica">Bird</h3>
+                <p class="cantor">Wave to Earth</p>
+            </div>
+        </div>
+        <div onclick="window.location.href='./TelasPlayers/Player3.html';" class="itemLista">
+            <img class="imgListaMusica" src="../img/sem olhos.jpeg" alt="imagem musica">
+            <div class="textoMusica">
+                <h3 class="tituloMusica">O Limbo do Menino Sem Olhos</h3>
+                <p class="cantor">Kamaitachi</p>
+            </div>
+        </div>
+        <div onclick="window.location.href='./TelasPlayers/Player3.html';" class="itemLista">
+            <img class="imgListaMusica" src="../img/bird.jpeg" alt="imagem musica">
+            <div class="textoMusica">
+                <h3 class="tituloMusica">Bird</h3>
+                <p class="cantor">Wave to Earth</p>
+            </div>
+        </div>
+    </div>
+    
+    
+
+
+    
+    <script src="../js/player.js" defer></script>
+   <!--- <script src="../js/blockInspect.js"></script>-->
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

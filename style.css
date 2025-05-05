@@ -131,11 +131,6 @@ body {
 
 }
 
-.content-container,h1, h3 {
-    text-align: center;
-    color: #c9d1d9;
-}
-
 .Pcartas{
     display: flex;
     justify-content: center;
@@ -214,7 +209,7 @@ body {
     background-color: #2ea043;
 }
 
-img {
+.imgAll {
     width: 50%;
     height: 50%;
     display: block;
@@ -223,14 +218,13 @@ img {
     border-radius: 8px;
 }
 @media (max-width: 900px) {
-    img{
+    .imgAll{
         width: 100%;
         height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-
     .login-container, .container-dicas, .carta-container {
         background-color: #161b22;
         margin-left: 15px;
@@ -257,10 +251,7 @@ img {
     justify-content: center;
     align-items: center;
 }
-
 .lyrics-box {
-
-
     max-width: 35vh;
     max-height: 30vh;
     overflow-y: auto;
@@ -272,15 +263,13 @@ img {
     line-height: 1.5;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    margin: 1.5vh auto 0; /* Centralizes horizontally */
+    margin: 2vh auto; /* Centralizes horizontally */
     font-weight: bold;
     color: #c9d1d9;
-
-    border : 0.5vh solid #d4d4d4;
-
-    scrollbar-width: thin;          /* "auto" or "thin" */
+    border: 0.5vh solid #d4d4d4;
+    scrollbar-width: thin; /* "auto" or "thin" */
     scrollbar-color: rgb(168, 168, 168) #161b22;
-} 
+}
 @media (min-width: 600px) {
     .lyrics-box {
         width: 40vh;
@@ -318,15 +307,14 @@ img {
     border-radius: 4px;
     transition: width 0.1s ease;
 }
-#music-image{
-    width: 50%;
-    height: 50%;
+#music-image {
     max-width: 40vh;
     max-height: 40vh;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 1.5vh;
+    margin: 0 auto;
 }
 
 .duration{
@@ -360,9 +348,11 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column; /* Align items vertically */
     cursor: pointer;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     transition: transform 0.2s ease, background-color 0.2s ease, content 0.2s ease; /* Added transition for content */
+    margin: 0px;
 }
 
 #playBtn.paused::before {
@@ -395,8 +385,7 @@ img {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
-.carta-container h1, .carta-container-topo h1 {
+.Titulo1{
     display: block;
     font-size: 2em;
     margin-block-start: 0.67em;
@@ -406,6 +395,15 @@ img {
     font-weight: bold;
     unicode-bidi: isolate;
     text-align: center; /* Aligns the h1 horizontally */
+}
+
+.Titulo3{
+    text-align: center;
+    color: #c9d1d9;
+}
+
+.carta-container h1, .carta-container-topo h1 {
+
 }
 @media (max-width: 900px) {
     .content-container, .carta-container {
@@ -506,4 +504,109 @@ button img{
     margin: 2vh;
     padding: 6vh;
     border-radius: 1.6vh;
+}
+
+
+
+.container-lista-musica {
+    display: flex;
+    flex-direction: column;
+    color: #c9d1d9;
+    margin-top: 80px;
+    padding: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #161b22;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.itemLista {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Espaço entre a imagem e o texto */
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.imgListaMusica {
+    width: 50px;
+    height: 50px;
+    border-radius: 1.5vh;
+}
+
+.textoMusica {
+    display: flex;
+    flex-direction: column; /* Organiza título e cantor em coluna */
+}
+
+.tituloMusica {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0; /* Remove margem extra */
+}
+
+.cantor {
+    font-size: 14px;
+    color: #8b949e; /* Cor mais suave para diferenciar do título */
+    margin: 0px; /* Remove margem extra */
+    margin-top: 3px;
+}
+
+
+
+.container-player{
+    background-color: #161b22;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+} 
+@media (max-width: 900px) {
+.container-player{
+    width: 100%;
+    margin: 0px;
+    border-radius: 0px;
+}
+#player-container1{
+    width: 100%;
+    margin: 10px;
+    padding: 0px;
+}
+.groupItens{
+    padding: 10px 0px 10px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+#music-image{
+    width: 60%;
+    height: 60%;
+    max-width: 40vh;
+    max-height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.5vh;
+    margin: 0;
+}
+#progress-container{
+    width: 70%;
+    margin-top: 12px;
+    margin-bottom: 12;
+}
+#controls{
+    margin: 5px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Oculta rolagem horizontal */
+}
 }
