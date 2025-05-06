@@ -45,12 +45,11 @@ const letras = [
     { time: 189, text: "Às vezes o tempo", duration: 7 } // 2:45 to 2:50
 ];
 const letras2 = [
-    { time: 27, text: "oo", duration: 6 }, // 0:27 to 0:33
-    { time: 33, text: "Resido em mim, sou meu lar", duration: 5 }, // 0:33 to 0:38
-    { time: 38, text: "E ninguém pode cantar minha canção", duration: 7 }, // 0:38 to 0:43
-    { time: 45, text: "Um abrigo, um amigo", duration: 5 }, // 0:43 to 0:48
-    { time: 48, text: "Um acorde suspenso, invertido", duration: 6 }, // 0:48 to 0:53
-    { time: 54, text: "O silêncio da voz da razão", duration: 10 }, // 0:53 to 1:00
+    { time: 0, text: "Oh-ohh, oh", duration: 13 }, // 0:27 to 0:33
+    { time: 14, text: "It must be more than I need you", duration: 5 }, // 0:33 to 0:38
+    { time: 38, text: "More than I love you", duration: 7 }, // 0:38 to 0:43
+    { time: 45, text: "Be more than wishes on stars", duration: 5 }, // 0:43 to 0:48
+    { time: 48, text: "High above you", duration: 6 }, // 0:48 to 0:53
 
     { time: 64, text: "É que às vezes o tempo para", duration: 5 }, // 1:00 to 1:05
     { time: 69, text: "Às vezes o tempo para", duration: 4 }, // 1:05 to 1:10
@@ -82,6 +81,45 @@ const letras2 = [
     { time: 184, text: "Às vezes o tempo para", duration: 4 }, // 2:40 to 2:45
     { time: 189, text: "Às vezes o tempo", duration: 7 } // 2:45 to 2:50
 ];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 let currentIndex = 0;
 let intervalId;
