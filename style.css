@@ -264,7 +264,7 @@ body {
     border-radius: 10px;
     margin: 2vh auto; /* Centralizes horizontally */
     margin-top: 4vh;
-    margin-b: 4vh;
+    margin-bottom: 4vh;
     font-weight: bold;
     color: #c9d1d9;
     scrollbar-width: thin; /* "auto" or "thin" */
