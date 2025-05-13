@@ -94,7 +94,7 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+       
         position: fixed;
         top: 0;
         left: 0;
@@ -256,7 +256,7 @@ body {
     max-height: 30vh;
     overflow-y: auto;
     padding: 15px;
-    background-color: #161b22;
+    background-color: #161b2200;
     color: #fff;
     font-family: Arial, sans-serif;
     font-size: 3vh;
@@ -491,22 +491,21 @@ button img{
     color: #f7f7f7;
 }
 
-#player-container1{
+#player-container1 {
     width: 50vh;
-    border: 3px solid #e9e9e9;
-    margin: 2vh;
-    padding: 6vh;
-    border-radius: 1.6vh;
-}
-#player-container2{
-    width: 50vh;
-    border: 3px solid #e74a4a;
-    margin: 2vh;
+ 
+    margin:  auto; /* Centralizes horizontally */
     padding: 6vh;
     border-radius: 1.6vh;
 }
 
-
+#player-container2 {
+    width: 50vh;
+    border: 0.5vh solid #e74a4a;
+    margin: 2vh auto; /* Centralizes horizontally */
+    padding: 6vh;
+    border-radius: 1.6vh;
+}
 
 .container-lista-musica {
     display: flex;
@@ -565,29 +564,49 @@ button img{
     display: flex;
     justify-content: center;
 } 
-@media (max-width: 900px) {
-.container-player{
-    width: 100%;
-    margin: 0px;
-}
-#player-container1{
-    width: 50%;
-    height: 100%;
-    margin: 10px;
 
+
+@media (max-width: 900px) {
+
+#player-container1 {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    overflow: hidden; /* Remove rolagem horizontal e vertical */
 }
-.groupItens{
+
+.groupItens {
     padding: 10px 0px 10px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center; /* Centraliza verticalmente */
     width: 100%;
     height: 100%;
+    overflow: hidden; /* Remove rolagem horizontal e vertical */
+}
+.lyrics-box{
+    max-width: 42vh;
+    max-height: 25vh;
+    overflow-y: auto;
+    padding: 15px;
+    background-color: #161b2200;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 3vh;
+    line-height: 1.5;
+    border-radius: 10px;
+    margin: 2vh auto; /* Centralizes horizontally */
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    font-weight: bold;
+    color: #c9d1d9;
+    scrollbar-width: thin; /* "auto" or "thin" */
+    scrollbar-color: rgba(168, 168, 168, 0) #161b22;
 }
 #music-image{
-    width: 60%;
-    height: 60%;
+    width: 36vh;
+    height: 36vh;
     max-width: 40vh;
     max-height: 40vh;
     display: flex;
@@ -597,9 +616,9 @@ button img{
     margin: 0;
 }
 #progress-container{
-    width: 95%;
-    margin-top: 12px;
-    margin-bottom: 12;
+    width: 50vh;
+    margin-top: 1vh;
+    margin-bottom: ;
 }
 #controls{
     margin: 5px;
