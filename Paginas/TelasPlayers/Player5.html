@@ -8,9 +8,8 @@
 
     <link rel="icon" href="/img/Logo.png" type="image/x-icon">
 </head>
-<body onload="checkLogin()">
-    <div class="container-player">
-        <div id="player-container1" style="border-color:  #9cafeb;">
+<body class="bodyPlayer" onload="checkLogin()">
+        <div id="player-container1">
             <div class="groupItens">
                 <img id="music-image" src="/img/calla.jpg" alt="Imagem da música">
                 <div id="letra-container" class="lyrics-box"></div>
@@ -21,10 +20,6 @@
                 </div>
                 <div id="controls">
                     <button id="playBtn" class="paused"></button>
-                </div>
-                <div id="progress-time">
-                    <span id="current-time">0:00</span> <!-- Updated to match JavaScript -->
-                    <span id="duration">0:00</span> <!-- Updated to match JavaScript -->
                 </div>
             </div>
         </div>

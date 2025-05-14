@@ -278,7 +278,7 @@ body {
 }
 
 .lyrics-box p {
-    margin: 8px 0;
+    margin: 3vh 0;
     text-align: center;
     opacity: 0.6;
     transition: opacity 0.3s ease;
@@ -292,10 +292,10 @@ body {
 
 #progress-container {
     width: 100%;
-    height: 8px;
+    height: 1.5vh;
     background-color: #404040;
-    border-radius: 4px;
-    margin: 10px 0;
+    border-radius: 1vh;
+    margin: 2vh 0;
     position: relative;
     cursor: pointer;
 }
@@ -304,7 +304,7 @@ body {
     height: 100%;
     background-color: #f7f7f7;
     width: 0;
-    border-radius: 4px;
+    border-radius: 1vh;
     transition: width 0.1s ease;
 }
 #music-image {
@@ -317,19 +317,13 @@ body {
     margin: 0 auto;
 }
 
-.duration{
-    font-size: 2.5vh;
 
+.current-time, .duration{
+    font-size: 2.5vh;
     color: #fff;
     font-family: Arial, sans-serif;
     line-height: 1.5;
-}
-.current-time{
-    font-size: 2.5vh;
-
-    color: #fff;
-    font-family: Arial, sans-serif;
-    line-height: 1.5;
+    margin-right: 10px;
 }
 
 #controls {
@@ -340,8 +334,8 @@ body {
 }
 
 #playBtn {
-    width: 50px;
-    height: 50px;
+    width: 10vh;
+    height: 10vh;
     background-color: #e7e7e7; /* Spotify green */
     border: none;
     border-radius: 50%; /* Make it circular */
@@ -493,9 +487,9 @@ button img{
 
 #player-container1 {
     width: 50vh;
- 
+
     margin:  auto; /* Centralizes horizontally */
-    padding: 6vh;
+    padding: 1vh;
     border-radius: 1.6vh;
 }
 
@@ -589,20 +583,32 @@ button img{
     max-width: 42vh;
     max-height: 25vh;
     overflow-y: auto;
-    padding: 15px;
+    padding: 2vh;
     background-color: #161b2200;
     color: #fff;
     font-family: Arial, sans-serif;
     font-size: 3vh;
     line-height: 1.5;
-    border-radius: 10px;
+    border-radius: 4vh;
     margin: 2vh auto; /* Centralizes horizontally */
     margin-top: 4vh;
     margin-bottom: 4vh;
     font-weight: bold;
     color: #c9d1d9;
     scrollbar-width: thin; /* "auto" or "thin" */
-    scrollbar-color: rgba(168, 168, 168, 0) #161b22;
+    scrollbar-color: rgba(168, 168, 168, 0) #161b2200;
+}
+.current-time, .duration{
+    font-size: 2.5vh;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    margin-right: 10px;
+}
+
+.progress-time{
+    display: flex;
+    gap: 10px;
 }
 #music-image{
     width: 36vh;
@@ -612,13 +618,13 @@ button img{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 1.5vh;
+    border-radius: 7%;
     margin: 0;
+    margin: 3vh 1vh 1vh 1vh;
 }
 #progress-container{
     width: 50vh;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
+    margin: 1vh 1vh 2vh 1vh ;
 }
 #controls{
     margin: 5px;
@@ -627,6 +633,13 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden; /* Oculta rolagem horizontal */
+}
+.bodyPlayer {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
 }
 }
 

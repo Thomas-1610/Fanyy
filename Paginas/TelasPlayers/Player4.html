@@ -8,8 +8,7 @@
 
     <link rel="icon" href="/Fanyy/img/Logo.png" type="image/x-icon">
 </head>
-<body onload="checkLogin()">
-    <div class="container-player">
+<body class="bodyPlayer" onload="checkLogin()">
         <div id="player-container1">
             <div class="groupItens">
                 <img id="music-image" src="/Fanyy/img/sem olhos.jpeg" alt="Imagem da música">
@@ -22,13 +21,8 @@
                 <div id="controls">
                     <button id="playBtn" class="paused"></button>
                 </div>
-                <div id="progress-time">
-                    <span id="current-time">0:00</span> <!-- Updated to match JavaScript -->
-                    <span id="duration">0:00</span> <!-- Updated to match JavaScript -->
-                </div>
             </div>
         </div>
-    
     <script src="/Fanyy/js/player.js" defer></script>
     <script src="/Fanyy/js/blockInspect.js"></script>
 </body>
