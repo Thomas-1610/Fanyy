@@ -351,14 +351,14 @@ body {
 
 #playBtn.paused::before {
     content: '▶'; /* Play icon */
-    font-size: 20px;
+    font-size: 4vh;
     color: #363636;
     transition: font-size 0.2s ease; /* Smooth transition for icon size */
 }
 
 #playBtn:not(.paused)::before {
     content: '❚❚'; /* Pause icon */
-    font-size: 20px;
+    font-size: 4vh;
     color: #363636;
     transition: font-size 0.2s ease; /* Smooth transition for icon size */
 }
@@ -486,10 +486,9 @@ button img{
 }
 
 #player-container1 {
-    width: 50vh;
-
+    width: 100%;
     margin:  auto; /* Centralizes horizontally */
-    padding: 1vh;
+
     border-radius: 1.6vh;
 }
 
